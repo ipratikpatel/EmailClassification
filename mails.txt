@@ -1,0 +1,46 @@
+Number of emails 872
+MESSAGE # 1 -----------------
+FROM:Gmail Team <mail-noreply@google.com>
+SENT DATE:Sun Oct 23 20:27:53 CDT 2011
+SUBJECT:Get Gmail on your mobile phone
+CONTENT: [image: Access Gmail on your mobile phone]  <http://www.google.com/intl/en/mobile/default/mail.html>    The days of needing your computer to get to your inbox are long gone. You  can now use Gmail on your mobile phone to access your email from anywhere.         Get Gmail for your phone  »<http://www.google.com/intl/en/mobile/default/mail.html#utm_source=wel-eml&utm_medium=eml&utm_campaign=en>  
+MESSAGE # 2 -----------------
+FROM:Gmail Team <mail-noreply@google.com>
+SENT DATE:Sun Oct 23 20:27:53 CDT 2011
+SUBJECT:Import your contacts and old email
+CONTENT:You can import your contacts and mail from Yahoo!, Hotmail, AOL, and many  other web mail or POP accounts. If you want, we'll even keep importing your  mail for the next 30 days.       Import contacts and mail  »<https://mail.google.com/mail/#settings/accounts>    We know it can be a pain to switch email accounts, and we hope this makes  the transition to Gmail a bit easier.    - The Gmail Team    Please note that importing is not available if you're using Internet  Explorer 6.0. To take advantage of the latest Gmail features, please upgrade  to a fully supported  browser<http://mail.google.com/support/bin/answer.py?answer=6557&hl=en&utm_source=wel-eml&utm_medium=eml&utm_campaign=en>  .  
+MESSAGE # 3 -----------------
+FROM:Gmail Team <mail-noreply@google.com>
+SENT DATE:Sun Oct 23 20:27:53 CDT 2011
+SUBJECT:Customize Gmail with colors and themes
+CONTENT:To spice up your inbox with colors and themes, check out the Themes tab  under Settings.         Customize Gmail » <https://mail.google.com/mail/#settings/themes>    Enjoy!    - The Gmail Team  [image: Themes thumbnails]    Please note that Themes are not available if you're using Internet Explorer  6.0. To take advantage of the latest Gmail features, please upgrade to a  fully supported  browser<http://mail.google.com/support/bin/answer.py?answer=6557&hl=en&utm_source=wel-eml&utm_medium=eml&utm_campaign=en>  .  
+MESSAGE # 4 -----------------
+FROM:Facebook <confirm+AcHJhdGlrLnBhdGVsYWs0N0BnbWFpbC5jb20@facebookmail.com>
+SENT DATE:Sun Oct 23 20:33:19 CDT 2011
+SUBJECT:Just one more step to get started on Facebook
+CONTENT:Hi Pratik,    To complete the sign-up process, please follow this link:    http://www.facebook.com/confirmemail.php?e=pratik.patelak47%40gmail.com&c=2126398649    You may be asked to enter this confirmation code: 2126398649    Welcome to Facebook!    The Facebook Team    Didn't sign up for Facebook? Please let us know:  http://www.facebook.com/confirmemail.php?e=pratik.patelak47%40gmail.com&amp;c=2126398649&amp;report=1      
+MESSAGE # 5 -----------------
+FROM:Facebook <update+kjdm1mdpku7m@facebookmail.com>
+SENT DATE:Sun Oct 23 20:33:19 CDT 2011
+SUBJECT:Welcome to Facebook
+CONTENT:=======================================  To log in to Facebook, follow the link below:  http://www.facebook.com/n/?find-friends%2F&mid=50ebd8dG5af3c82f4c6bG0G4b&code=2126398649&n_m=pratik.patelak47%40gmail.com  =======================================    Hi Pratik,    Your account has been created &mdash; now it will be easier than ever to share and connect with your friends.    Here are three ways for you to get the most out of it:    1. Find Friends  Find people you know on Facebook using our simple tools.  http://www.facebook.com/n/?find-friends%2F&mid=50ebd8dG5af3c82f4c6bG0G4b&code=2126398649&n_m=pratik.patelak47%40gmail.com    2. Upload a Profile Photo  Personalize your profile and help your friends recognize you.  http://www.facebook.com/n/?profile.php&mid=50ebd8dG5af3c82f4c6bG0G4b&code=2126398649&n_m=pratik.patelak47%40gmail.com    3. Edit Your Profile  Describe personal interests, contact information, and affiliations.  http://www.facebook.com/n/?profile.php&v=info&edit_info=all&mid=50ebd8dG5af3c82f4c6bG0G4b&code=2126398649&n_m=pratik.patelak47%40gmail.com    If you have any questions, reference our New User Guide:  http://www.facebook.com/n/?help%2Fnew_user_guide.php&mid=50ebd8dG5af3c82f4c6bG0G4b&code=2126398649&n_m=pratik.patelak47%40gmail.com    Thanks,  The Facebook Team    Didn't sign up for Facebook? Please let us know:  http://www.facebook.com/confirmemail.php?e=pratik.patelak47%40gmail.com&amp;c=2126398649&amp;report=1    =======================================  The message was sent to pratik.patelak47@gmail.com. If you don't want to receive these emails from Facebook in the future, please follow the link below to unsubscribe.  http://www.facebook.com/o.php?k=ab3330&u=100003082095723&mid=50ebd8dG5af3c82f4c6bG0G4b  Facebook, Inc. P.O. Box 10005, Palo Alto, CA 94303    
+MESSAGE # 6 -----------------
+FROM:Facebook <notification+kjdm1mdpku7m@facebookmail.com>
+SENT DATE:Sun Oct 23 21:05:29 CDT 2011
+SUBJECT:Karan confirmed you as a friend on Facebook...
+CONTENT:Hi Pratik,    Karan confirmed you as a friend on Facebook.    Thanks,  The Facebook Team    To view Karan's profile or write on his Wall, follow this link:  http://www.facebook.com/n/?profile.php&id=100001791819844&mid=50ec517G5af3c82f4c6bG1863bG1b&bcode=2XbC4hLa&n_m=pratik.patelak47%40gmail.com    =======================================  The message was sent to pratik.patelak47@gmail.com. If you don't want to receive these emails from Facebook in the future, please follow the link below to unsubscribe.  http://www.facebook.com/o.php?k=ab3330&u=100003082095723&mid=50ec517G5af3c82f4c6bG1863bG1b  Facebook, Inc. P.O. Box 10005, Palo Alto, CA 94303    
+MESSAGE # 7 -----------------
+FROM:Facebook <notification+kjdm1mdpku7m@facebookmail.com>
+SENT DATE:Sun Oct 23 21:26:35 CDT 2011
+SUBJECT:Hetal confirmed you as a friend on Facebook...
+CONTENT:Hi Pratik,    Hetal confirmed you as a friend on Facebook.    Thanks,  The Facebook Team    To view Hetal's profile or write on her Wall, follow this link:  http://www.facebook.com/n/?handmplusone&mid=50eca09G5af3c82f4c6bG188b9G1b&bcode=2XbC4hLa&n_m=pratik.patelak47%40gmail.com    =======================================  The message was sent to pratik.patelak47@gmail.com. If you don't want to receive these emails from Facebook in the future, please follow the link below to unsubscribe.  http://www.facebook.com/o.php?k=ab3330&u=100003082095723&mid=50eca09G5af3c82f4c6bG188b9G1b  Facebook, Inc. P.O. Box 10005, Palo Alto, CA 94303    
+MESSAGE # 8 -----------------
+FROM:Facebook <notification+kjdm1mdpku7m@facebookmail.com>
+SENT DATE:Sun Oct 23 22:56:21 CDT 2011
+SUBJECT:Jig confirmed you as a friend on Facebook...
+CONTENT:Hi Pratik,    Jig confirmed you as a friend on Facebook.    Thanks,  The Facebook Team    To view Jig's profile or write on his Wall, follow this link:  http://www.facebook.com/n/?profile.php&id=1627971009&mid=50edf13G5af3c82f4c6bG1923cG1b&bcode=2XbC4hLa&n_m=pratik.patelak47%40gmail.com    =======================================  The message was sent to pratik.patelak47@gmail.com. If you don't want to receive these emails from Facebook in the future, please follow the link below to unsubscribe.  http://www.facebook.com/o.php?k=ab3330&u=100003082095723&mid=50edf13G5af3c82f4c6bG1923cG1b  Facebook, Inc. P.O. Box 10005, Palo Alto, CA 94303    
+MESSAGE # 9 -----------------
+FROM:Facebook <notification+kjdm1mdpku7m@facebookmail.com>
+SENT DATE:Sun Oct 23 23:32:17 CDT 2011
+SUBJECT:Parth confirmed you as a friend on Facebook...
+CONTENT:Hi Pratik,    Parth confirmed you as a friend on Facebook.    Thanks,  The Facebook Team    To view Parth's profile or write on his Wall, follow this link:  http://www.facebook.com/n/?profile.php&id=100000054162325&mid=50ee77fG5af3c82f4c6bG1958dG1b&bcode=2XbC4hLa&n_m=pratik.patelak47%40gmail.com    =======================================  The message was sent to pratik.patelak47@gmail.com. If you don't want to receive these emails from Facebook in the future, please follow the link below to unsubscribe.  http://www.facebook.com/o.php?k=ab3330&u=100003082095723&mid=50ee77fG5af3c82f4c6bG1958dG1b  Facebook, Inc. P.O. Box 10005, Palo Alto, CA 94303    
