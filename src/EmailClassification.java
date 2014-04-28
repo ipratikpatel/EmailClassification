@@ -44,9 +44,12 @@ public class EmailClassification {
 	private int nTypes;
 	
 	// log priors for log( P(t) )
-	private Map<String, Double> prior;
+	private Map<String, Double> priors;
 	
 	private Map<String, Map<String, Double> > condProb;
+	
+	//Number of documents belonging to class c
+	private Map<String, Integer> Nc;
 	
 	/**
 	 * EmailClassification constructor
@@ -54,8 +57,49 @@ public class EmailClassification {
 	public EmailClassification() {
 		nEmails = 0;
 		nTypes = 0;
-		prior = new HashMap<>();
+		priors = new HashMap<>();
 		condProb = new HashMap<>();
+		Nc = new HashMap<>();
+	}
+	
+	public String predictEmail(String filePath) {
+		if(priors == null || condProb == null)
+			throw new IllegalArgumentException("Need to train before predicting you FOOL!");
+		
+		Email eml = processEmail(filePath);
+		
+		String type;
+        String token;
+        Integer tokenCount;
+        Double scoreC;
+        
+        String answer = null;
+        Double maxScore=Double.NEGATIVE_INFINITY;
+        
+        //for each class in Classes
+        for(Map.Entry<String, Double> prior : priors.entrySet()){
+        	type = prior.getKey();
+        	//score[c] = log priors[c]
+        	scoreC = Math.log(prior.getValue());
+        	
+        	//for each token in email
+        	for(Map.Entry<String, Integer> eToken : eml.tokens.entrySet()) {
+        		token = eToken.getKey();
+        		tokenCount = eToken.getValue();
+        		// If the token does not exixt in the trained dataset then ignore it
+        		if(!condProb.containsKey(token))
+        			continue;
+        		//score[c] += log condProb[token][type]
+        		scoreC += tokenCount * Math.log(condProb.get(token).get(type));
+        	}
+        	
+        	if(scoreC > maxScore) {
+        		maxScore = scoreC;
+        		answer = type;
+        	}
+        }
+		//return argMax c in C score[c]
+		return answer;	
 	}
 
 	/**
@@ -70,6 +114,65 @@ public class EmailClassification {
 		
 		//Preprocess given email dataset using their results
 		List<Email> trainSet = preprocessTrainEmails(types, folderName, ansFile);
+		
+		//Count for each token in each type of email
+		Map<String, Map<String, Integer> > tokenType2dCount  = tokenToTypeRel(trainSet);
+		
+		//Make sure that you processes all of the emails
+		assert(nEmails == trainSet.size());
+		
+		//Every token/word from all emails
+		int numTokens = tokenType2dCount.size(); 
+		
+		nTypes = Nc.size();
+		String type;
+		int count;
+		for(Map.Entry<String, Integer> entry : Nc.entrySet()) {
+			type = entry.getKey();
+			count = entry.getValue();
+			
+			priors.put(type, (double) count/nEmails);
+		}
+		
+		//We are performing laplace smoothing (also known as add-1). This requires to estimate the total feature occurrences in each category
+		Map<String, Double> tokenOccrsInTypes = new HashMap<>();
+		
+		//Get How many total tokens are in a particular category, including repetition of tokens
+		Integer occurrences;
+		Double tokenOccSum;
+		for(String kind : priors.keySet()) {
+			tokenOccSum = 0.0;
+			for(Map<String, Integer> typeCatOccrs : tokenType2dCount.values()) {
+				occurrences = typeCatOccrs.get(kind);
+				if(occurrences != null) {
+					tokenOccSum += occurrences;
+				}
+			}
+			tokenOccrsInTypes.put(kind, tokenOccSum);
+		}
+		
+		String token;
+		Integer count2;
+		Map<String, Integer> tokenTypeCounts;
+		double likelihood;
+		for(String type2 : priors.keySet()) {
+			for(Map.Entry<String, Map<String, Integer>> entry : tokenType2dCount.entrySet()) {
+				token = entry.getKey();
+				tokenTypeCounts = entry.getValue();
+				
+				count2 = tokenTypeCounts.get(type2);
+				if(count2 == null) {
+					count2 = 0;
+				}
+				
+				likelihood = (count2 + 1.0)/(tokenOccrsInTypes.get(type2) + numTokens);
+				if(condProb.containsKey(token) == false) {
+					condProb.put(token, new HashMap<String, Double>());
+				}
+				condProb.get(token).put(type2, likelihood);
+			}
+		}
+		tokenOccrsInTypes = null;
 		
 	}
 	
@@ -106,6 +209,49 @@ public class EmailClassification {
 		return trainset;
 	}
 	
+	
+	public Map<String, Map<String, Integer> > tokenToTypeRel(List<Email> trainSet){
+		Map<String, Map<String, Integer> > tokenType2dCount = new HashMap<>();
+		
+		Integer typeCount;
+		Integer tokenTypeCount;
+		String token;
+		String type;
+		Map<String, Integer> tempTypeCounts;
+		
+		for(Email eml : trainSet) {
+			//Increment number of emails TODO: Get rid of this later
+			++nEmails;
+			type = eml.kind;
+			
+			//Get number of emails in specific type
+			typeCount = Nc.get(type);
+			if(typeCount == null)
+				typeCount = 0;
+			
+			Nc.put(type, typeCount + 1);
+			
+			for(Map.Entry<String, Integer> entry : eml.tokens.entrySet()) {
+				token = entry.getKey();
+				
+				tempTypeCounts = tokenType2dCount.get(token);
+				if(tempTypeCounts == null) {
+					tokenType2dCount.put(token, new HashMap<String, Integer>());
+				}
+				
+				tokenTypeCount = tokenType2dCount.get(token).get(type);
+				if(tokenTypeCount == null)
+					tokenTypeCount = 0;
+				
+				tokenType2dCount.get(token).put(type, ++tokenTypeCount);
+				
+			}
+			
+		}
+		
+		return tokenType2dCount;
+	}
+	
 	public Email processEmail(String fileName, String type){
 		Email ans = new Email();
 		ans.kind = type;
@@ -128,10 +274,17 @@ public class EmailClassification {
 		//Tokenize the content and have it return List<String>
 		
 		//System.out.println("Kind = " + ans.kind + " content = " + content);
-		tokenizer(content);
+		ans.tokens = tokenizer(content);
 		
+//		for(String key : ans.tokens.keySet())
+//			System.out.println("Key = " + key + " counter = " + ans.tokens.get(key));
+//		
 		output.close();
 		return ans;
+	}
+	
+	public Email processEmail(String fileName){
+		return processEmail(fileName, "Predicting");
 	}
 	
 	public Map<String, Integer> tokenizer(String content){
