@@ -197,10 +197,15 @@ public class EmailClassification {
 		
 		Email eml;
 		
+		boolean check = true;
 		for (String key: answers.keySet()) {
 			//System.out.println(key + " = " + answers.get(key));
 			//Process the email given its type
 			//String key = "TRAIN_00000.eml";
+			if(check){
+				System.out.println("Checking if modification worked , Filename: " + key);
+				check = false;
+			}
 			String fName = folderName +"//" + key;
 			eml = processEmail(fName, types[answers.get(key)]);
 			trainset.add(eml);

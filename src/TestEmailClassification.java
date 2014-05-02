@@ -13,12 +13,17 @@ public class TestEmailClassification {
 		//System.out.println(ec.predictEmail("TRAINING//TRAIN_00002.eml"));
 		
 		String filename;
-		for (int i = 10; i <= 20; i++) {
+		for (int i = 0; i <= 500; i++) {
 			filename = "TRAINING//TRAIN_";
 			filename += String.format("%05d", i);
 			filename += ".eml";
-			System.out.println("Email # " + i + " Filename: " + filename + " Prediction: " + ec.predictEmail(filename));
-			
+			//System.out.println("Email # " + i + " Filename: " + filename + " Prediction: " + ec.predictEmail(filename));
+			int ans;
+			if(ec.predictEmail(filename).equals("Spam"))
+				ans = 0;
+			else
+				ans = 1;
+			System.out.println(ans + " " + filename.replace("TRAINING//", ""));
 		}
 		
 		System.out.println("Done!");

@@ -1,5 +1,5 @@
-FROM:Stefan Monnier <monnier@iro.umontreal.ca>
-SENT DATE:Fri May 14 13:56:05 CDT 2010
-SUBJECT:Re: What to choose for Core i5 64 bits?
-CONTENT:>>> If you have other i386 machines around, it may be convenient for you to >>> keep the same architecture so you can share the download bandwidth of >>> Debian updates, and things like that. > On the other hand, now might be a good time to begin the migration to the > future. 32-bits will be around for a long time, but it will increasingly be > relegated to older hardware and niche applications, such as embedded > processors or cell phones and the like. 64-bits is going to be the > "current" architecture for desktops, servers, and the like for a good while > to come. That's true. I used to say and think that ... back around 1992 when I started to use DEC Alpha machines. But now that 2GB is about as little RAM as you can get in a new machine, the push to move to 64bit is very real. Stefan -- To UNSUBSCRIBE, email to debian-user-REQUEST@lists.debian.org with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org Archive: http://lists.debian.org/jwviq6q48n9.fsf-monnier+gmane.linux.debian.user@gnu.org
+FROM:Paul Kelly <longword@esatclear.ie>
+SENT DATE:Mon Jul 29 23:22:28 CDT 2002
+SUBJECT:Re: [ILUG] Optimizing for Pentium Pt.2
+CONTENT:Liam Bedford wrote: > that is the CVS version, but it seems that more breakage is to come with the > kernel :( Limbo seems to be able to compile its own kernel with its own gcc 3.1. That said, I don't want to know what kind of patches Redhat are applying to that kernel. The .spec file alone is 128KBytes! One of the patches is 2.4.19-ac10. Redhat don't seem to have patched Limbo's gcc too heavily. Paul. -- Irish Linux Users' Group: ilug@linux.ie http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information. List maintainer: listmaster@linux.ie
 String rep of Mail------------------------------
