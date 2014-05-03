@@ -203,7 +203,7 @@ public class EmailClassification {
 			//Process the email given its type
 			//String key = "TRAIN_00000.eml";
 			if(check){
-				System.out.println("Checking if modification worked , Filename: " + key);
+				//System.out.println("Checking if modification worked , Filename: " + key);
 				check = false;
 			}
 			String fName = folderName +"//" + key;
@@ -322,7 +322,7 @@ public class EmailClassification {
 	
 	public Map<String, Integer> extractAnsFile(String fileName) throws IOException {
 		
-		BufferedReader br = new BufferedReader(new FileReader("SPAMTrain.label"));
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		
 		Map<String, Integer> answers = new HashMap<String, Integer>();
 		String line;

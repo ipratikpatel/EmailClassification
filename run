@@ -1,0 +1,2 @@
+#!/bin/sh
+java -cp .:../libs/mail.jar:../libs/jsoup-1.7.3.jar TestEmailClassification

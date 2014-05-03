@@ -84,7 +84,7 @@ public class EmailReceiver {
         } catch (Exception mex) {
             mex.printStackTrace();
         }
-        System.out.println("Done!");
+        //System.out.println("Done!");
         output.close();
     }
     
@@ -230,7 +230,7 @@ public class EmailReceiver {
 				
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
-			System.out.println("Filename: " + filename + " MessagingException");
+			//System.out.println("Filename: " + filename + " MessagingException");
 			output.println("Catch String rep of Mail------------------------------");
 			return ans;
 			//e.printStackTrace();
