@@ -42,7 +42,7 @@ public class EmailReceiver {
         try {
             Session session = Session.getInstance(props, null);
             Store store = session.getStore();
-            store.connect("imap.gmail.com", "pratik.patelak47@gmail.com", "pratik92");
+            store.connect("imap.gmail.com", "username@gmail.com", "password");
             Folder inbox = store.getFolder("INBOX");
             inbox.open(Folder.READ_ONLY);
             output.println("Number of emails " + inbox.getMessageCount());

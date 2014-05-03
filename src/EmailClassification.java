@@ -31,7 +31,7 @@ import java.util.Map;
  * EmailClassification class can be used to train and predict emails.
  * Trains the DataModel using Multinomial naive bayes.
  * Need to train first and then use it to predict
- * <Some help from DatumBox Programs>
+ * Some help from DatumBox Programs
  * @author Pratik
  *
  */
