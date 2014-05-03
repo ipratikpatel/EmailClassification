@@ -3,6 +3,20 @@ UT EID:	pmp642
 
 EmailClassification
 ===================
+
+For the grader's convenience I have written a build script and run script.
+
+So to build the program in your console use command
+./build
+and to run the program, use command
+./run
+
+//Make changes in TestEmailClassification.java file to try train a model
+
+//Current TestEmailClassification.java file trains the model using TRAIN_00501 to TRAIN_04326 emails in TRAINING folder and 
+//predicts first 500 hundred emails in TRAINING folder 
+
+
 1) EmailClassification Class
 	This class is the implementation of multinomial naive bayes framework. It implements methods such as trainEmails() and predictEmail() which are responsible for training a classifier and using it to predicting emails. It calls other methods to read and process emails as well.
 
@@ -47,3 +61,5 @@ Requirements:
 		
 		System.out.println("Done!");
 //Above code will print out the result on the console and the original email for first 500 emails are in TestingEmail.txt file.
+
+
