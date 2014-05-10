@@ -4,7 +4,7 @@ UT EID:	pmp642
 EmailClassification
 ===================
 
-For the grader's convenience I have written a build script and run script.
+For the user's convenience I have written a build script and run script.
 
 So to build the program in your console use command
 ./build
